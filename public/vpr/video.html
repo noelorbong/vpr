@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>
+    CCTV OCR DEMO
+</title>
+
+<head>
+    <script>
+        let base64 = '';
+
+        function checkFile() {
+            const secret_key = "sk_4d5ff2e5160659dd532f5c2c";
+            const url = "https://api.openalpr.com/v2/recognize_bytes?recognize_vehicle=1&country=us&secret_key=" + secret_key;
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", url);
+
+            // Send POST data and display response
+            xhr.send(base64);  // Replace with base64 string of an actual image
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    console.log(JSON.parse(xhr.responseText));
+                    const response = JSON.parse(xhr.responseText);
+                    if(response.results[0].plate) {
+                        document.getElementById("response").innerHTML = 'PLATE NUMBER: ' + response.results[0].plate;
+                    } else {
+                        document.getElementById("response").innerHTML = 'ERROR: Plate number not detected!';
+                    }
+                } else {
+                    document.getElementById("response").innerHTML = "Waiting on response...";
+                }
+            };
+
+            console.log(readFile());
+        }
+
+        function readFile() {
+
+            if (this.files && this.files[0]) {
+
+                const FR = new FileReader();
+
+                FR.addEventListener("load", function(e) {
+                    document.getElementById("img").src = e.target.result;
+                    base64 = e.target.result.split(',')[1];
+                    console.log('E RESULT', base64);
+                });
+
+                FR.readAsDataURL( this.files[0] );
+            }
+
+            return base64;
+        }
+
+        window.onload=function() {
+            document.getElementById("imageFile").addEventListener("change", readFile);
+        }
+
+    </script>
+    <!-- include jquery + source -->
+    <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script language="javascript" src="http://revolunet.github.com/VLCcontrols/src/jquery-vlc.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://revolunet.github.com/VLCcontrols/src/styles.css" />
+    <!-- embed the player and play a file -->
+    <script language="javascript">
+        var player = VLCobject.embedPlayer('vlc1', 400, 300);
+        player.play('http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_surround-fix.avi');
+    </script>
+</head>
+
+<body>
+<input id="imageFile" type="file" placeholder="Add Image Here..."/>
+<input type="button" value="Check Plate Number" onclick="checkFile()"/>
+Response: <p id="response"></p><br>
+<img id="img" alt="Plate Image"/>
+<!--<embed type="application/x-vlc-plugin" name="player" autoplay="no" loop="no" target="rtsp://192.168.0.3:554/user=admin&password=&channel=1&stream=1.sdp?real_stream--rtp-caching=100" />-->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</body>
+</html>
+</html>

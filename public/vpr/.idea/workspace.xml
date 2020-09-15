@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8565a20d-4476-470f-84c5-9fae5ea6e72c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="VPR" />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectId" id="1PJU6MFMHhZ2P96NbldyeWfQyV4" />
+  <component name="PropertiesComponent">
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Portfolio" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\VPR" />
+      <recent name="C:\xampp\htdocs\VPR" />
+      <recent name="C:\xampp\htdocs\VPR\fpdf181\tutorial" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8565a20d-4476-470f-84c5-9fae5ea6e72c" name="Default Changelist" comment="" />
+      <created>1565591516502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565591516502</updated>
+      <workItem from="1565591519044" duration="10035000" />
+      <workItem from="1565658509935" duration="50000" />
+      <workItem from="1565658649196" duration="359000" />
+      <workItem from="1565665182863" duration="1462000" />
+      <workItem from="1565931651566" duration="1422000" />
+      <workItem from="1566020042618" duration="413000" />
+      <workItem from="1566020490941" duration="27181000" />
+      <workItem from="1566104154718" duration="8207000" />
+      <workItem from="1566181175631" duration="209000" />
+      <workItem from="1566190307047" duration="2244000" />
+      <workItem from="1566375328769" duration="115000" />
+      <workItem from="1566457702984" duration="697000" />
+      <workItem from="1566533199472" duration="2099000" />
+      <workItem from="1566535735644" duration="2126000" />
+      <workItem from="1566541705048" duration="183000" />
+      <workItem from="1566631954085" duration="4180000" />
+      <workItem from="1566643726791" duration="639000" />
+      <workItem from="1567163744597" duration="1629000" />
+      <workItem from="1567170252491" duration="2857000" />
+      <workItem from="1568967304094" duration="2595000" />
+      <workItem from="1569312046599" duration="3638000" />
+      <workItem from="1569406225406" duration="7339000" />
+      <workItem from="1569501619308" duration="5288000" />
+      <workItem from="1569552266180" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+</project>
